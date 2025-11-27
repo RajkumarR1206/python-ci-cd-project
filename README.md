@@ -5,7 +5,7 @@
 This project demonstrates a **CI/CD pipeline** for a simple Python application using **GitHub Actions, Docker, flake8, Bandit, and pytest**.  
 The pipeline automatically runs code quality checks, security scans, unit tests, builds a Docker image, and pushes it to Docker Hub on every push to the `main` branch.
 
-The application is a minimal Python program designed to showcase pipeline functionality.
+The application is a minimal Python program (Adding two numbers 2 & 3 which results in output as 5) designed to showcase pipeline functionality.
 
 
 
@@ -38,7 +38,7 @@ python-ci-cd-project/
 
 ---
 
-## CI/CD Pipeline Steps
+## CI/CD Pipeline Steps:
 
 1. **Checkout Code** – Pull the latest code from the repository.  
 2. **Install Dependencies** – Install Python packages from `requirements.txt`.  
@@ -50,12 +50,38 @@ python-ci-cd-project/
 
 ---
 
+## Sample Output:
+
+Pushed code to Github:
+
+<img width="1359" height="401" alt="git-push" src="https://github.com/user-attachments/assets/7a5faab7-aa5d-40ec-b957-9af26d9b64d5" />
+
+CI Workflow Triggered:
+
+<img width="1351" height="577" alt="Build-security-job" src="https://github.com/user-attachments/assets/cd34ac99-b7bb-4ecc-a975-730eb8b700e7" />
+
+<img width="1350" height="537" alt="Docker-build-push-job" src="https://github.com/user-attachments/assets/f89a2a1f-c2fd-4f27-b101-85f2d7a2c7ac" />
+
+Image pushed to Docker Hub:
+
+<img width="1362" height="606" alt="dockerhub-python-image" src="https://github.com/user-attachments/assets/e3557b97-6a4e-455d-a1c9-3922873adf5b" />
+
+Pulled Image locally:
+
+<img width="1364" height="192" alt="python-image-pull" src="https://github.com/user-attachments/assets/e8b979a7-be01-4a73-8f30-8500662ff7cd" />
+
+Run Container:
+
+<img width="1357" height="125" alt="python-container-run" src="https://github.com/user-attachments/assets/8518bcf3-d580-4a59-af2b-8920f2507bac" />
+
+
+---
 ## Local Setup
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/python-ci-cd-project.git
+git clone https://github.com/RajkumarR1206/python-ci-cd-project.git
 cd python-ci-cd-project
 ````
 
